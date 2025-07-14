@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            background: #fff;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 999;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a.active {
+            color: #ff5b3c;
+        }
+
+        .schedule {
+            background: #ac2765;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .schedule:hover {
+            background: #e34c2e;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background: url('bg.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 50px;
+            position: relative;
+            margin-top: 80px; /* Adjust based on header height */
+        }
+
+        .hero-content {
+            color: #fff;
+            max-width: 500px;
+            background: rgba(0,0,0,0.5);
+            padding: 20px 30px;
+            border-radius: 10px;
+        }
+
+        .hero-content small {
+            background: #fff;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            margin-top: 10px;
+            line-height: 1.3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">VILLA</div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Properties</a>
+            <a href="#">Property Details</a>
+            <a href="#">Contact Us</a>
+            <a href="#" class="schedule">Schedule a visit</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <small>Venice, <span style="color:#9c164e;">Itly</span></small>
+            <h1>HURRY UP!<br>GET THE BEST<br>VILLA FOR YOU</h1>
+        </div>
+    </section>
+
+</body>
+</html>
+
