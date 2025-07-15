@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villa Properties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -16,6 +18,39 @@
             overflow-x: hidden;
         }
 
+        /* Top contact bar */
+        .top-bar {
+            background-color: #f8f8f8;
+            padding: 5px 50px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .top-bar .left-content i {
+            margin-right: 5px;
+        }
+
+        .top-bar .left-content span {
+            margin-right: 20px;
+        }
+
+        .top-bar .social-icons a {
+            margin-left: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .top-bar .social-icons a:hover {
+            color: #0073e6;
+        }
+
         header {
             width: 100%;
             background: #fff;
@@ -24,7 +59,7 @@
             justify-content: space-between;
             align-items: center;
             position: fixed;
-            top: 0;
+            top: 35px; /* Below the top-bar */
             left: 0;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             z-index: 999;
@@ -68,20 +103,20 @@
             justify-content: flex-start;
             padding-left: 50px;
             position: relative;
-            margin-top: 80px; /* Adjust based on header height */
+            margin-top: 130px; /* Adjusted for top-bar + header */
         }
 
         .hero-content {
             color: #fff;
             max-width: 500px;
-            background: rgba(0,0,0,0.5);
+            background: rgba(102, 13, 65, 0.5);
             padding: 20px 30px;
             border-radius: 10px;
         }
 
         .hero-content small {
             background: #fff;
-            color: #000;
+            color: #2a0f68;
             padding: 5px 10px;
             border-radius: 20px;
             font-size: 12px;
@@ -98,6 +133,21 @@
 </head>
 <body>
 
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="left-content">
+            <span><i class="fas fa-envelope"></i> info@company.com</span>
+            <span><i class="fas fa-map-marker-alt"></i> Sunny Isles Beach, FL 33160</span>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
     <header>
         <div class="logo">VILLA</div>
         <nav>
@@ -109,13 +159,13 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <small>Venice, <span style="color:#9c164e;">Itly</span></small>
-            <h1>HURRY UP!<br>GET THE BEST<br>VILLA FOR YOU</h1>
+            <small>france, <span style="color:#9c164e;">Paris</span></small>
+            <h1>HURRY UP!!<br>GET THE BEST<br>VILLA FOR YOU</h1>
         </div>
     </section>
 
 </body>
 </html>
-
