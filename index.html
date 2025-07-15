@@ -19,37 +19,42 @@
         }
 
         /* Top contact bar */
-        .top-bar {
-            background-color: #f8f8f8;
-            padding: 5px 50px;
-            font-size: 14px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-        }
+       .top-bar {
+    background-color: #f8f8f8;
+    padding: 5px 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
-        .top-bar .left-content i {
-            margin-right: 5px;
-        }
+.top-bar .bar-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .top-bar .left-content span {
-            margin-right: 20px;
-        }
+.top-bar .left-content {
+    justify-content: flex-start;
+}
 
-        .top-bar .social-icons a {
-            margin-left: 10px;
-            color: #333;
-            text-decoration: none;
-        }
+.top-bar .center-content {
+    justify-content: center;
+}
 
-        .top-bar .social-icons a:hover {
-            color: #0073e6;
-        }
+.top-bar .right-content {
+    justify-content: flex-end;
+}
+
+.top-bar i {
+    margin-right: 5px;
+}
 
         header {
             width: 100%;
